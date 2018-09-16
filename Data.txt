@@ -1,4 +1,17 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Data Section</title>
+  </head>
+  <body>
 This use case should leverage two data sources:
--	Foursquare APIs will be used to retrieve the coordinates of all Italian and Fast Food restaurants in the city of Totonto .These data will be reworked to cluster the zones where there is the higher density of the restaurant. The cluster algorithm will be a density based algorithm using the Euclidian distance between restaurants as main clusterfactor.
--	Toronto postal code coordinates list that will be used to create the end to end path from high density desired restaurants zones using the edges (east and west) and centers of clustered areas.
+<br>
+<UL>
+<li>Foursquare APIs will be used to retrieve the coordinates of all Italian and Fast Food restaurants in the city of Totonto (Foursaure API alllows a search for specific restaurant types). More specifically, the geo-spacial features returned by the API will be used to cluster the zones where there is the higher density of the restaurant. The cluster algorithm will be a density based algorithm using the Euclidian distance between restaurants as main cluster factor. This will allow to create better shappes for the clusters than circles.</li>
+<li>Toronto postal code coordinates (from Wikipeadia page) that will be used to create the end to end path. We will calculate the closer postal code area center to the edges (east and west) and centers of clustered areas. This will be bease to provided itinerary.</li>
+</ul>
+<br>
 All along the project, interactive maps will be used to visualize restaurants, cluster of restaurants and at the end the optimized end to end proposed path.
+</body>
+</html>
